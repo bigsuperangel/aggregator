@@ -1,12 +1,12 @@
 name: Delete
 on:
-  schedule:
-    - cron: "0 0 * * SUN"
+  # schedule:
+    # - cron： “0 0 * * 太阳”
 
 jobs:
   del_runs:
     runs-on: ubuntu-latest
-    steps:
+    步骤：
       - name: Delete
         uses: GitRML/delete-workflow-runs@main
         with:
